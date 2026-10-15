@@ -1,0 +1,16 @@
+s = input("Enter string: ")
+
+s = s.replace(" ", "").lower()
+left = 0
+right = len(s) - 1
+palindrome = True
+
+while left < right:
+    if s[left] != s[right]:
+        palindrome = False
+        break
+
+    left += 1
+    right -= 1
+
+print(palindrome)
